@@ -10,7 +10,9 @@ defmodule BankPlatform.Mixfile do
   end
 
   defp deps do
-    []
+    [
+			{:floki, "~> 0.11.0"},
+		]
   end
 
   defp aliases do
