@@ -21,7 +21,7 @@ defmodule Bank.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :ecto, :postgrex, :auth, :money],
+    [applications: [:logger, :gen_stage, :ecto, :postgrex, :auth, :money],
      mod: {Bank.Application, []}]
   end
 
@@ -32,6 +32,9 @@ defmodule Bank.Mixfile do
     [{:ecto, "~> 2.0"},
      {:postgrex, ">= 0.0.0"},
      {:scrivener_ecto, github: "drewolson/scrivener_ecto"},
+     {:gen_stage, github: "elixir-lang/gen_stage"},
+     #  html parser
+     {:floki, "~> 0.11.0"},
 
      {:ex_doc, ">= 0.0.0", docs: true},
 

@@ -9,11 +9,7 @@ defmodule BankPlatform.Mixfile do
      aliases: aliases()]
   end
 
-  defp deps do
-    [
-			{:floki, "~> 0.11.0"},
-		]
-  end
+  defp deps, do: []
 
   defp aliases do
     ["ecto.setup": ["ecto.create", "ecto.migrate", "ecto.seed"],
